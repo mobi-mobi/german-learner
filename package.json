@@ -1,0 +1,33 @@
+{
+  "name": "svelte2",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "seed": "ts-node src/seed/seedWords.ts"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.0",
+    "@sveltejs/kit": "^2.50.2",
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "prisma": "^7.4.2",
+    "svelte": "^5.51.0",
+    "svelte-check": "^4.4.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@better-auth/prisma-adapter": "^1.5.3",
+    "@prisma/adapter-neon": "^7.4.2",
+    "@prisma/client": "^7.4.2",
+    "better-auth": "^1.5.3",
+    "dotenv": "^17.3.1"
+  }
+}
